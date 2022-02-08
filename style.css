@@ -1,0 +1,201 @@
+/* CSS reset */
+*{
+    margin : 0;
+    padding : 0;
+}
+
+/* Flex Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+
+}
+
+/*  Logo */
+
+#logo{
+    margin : 2px 2px;
+}
+#logo img{
+    height: 100px;
+    margin: 3px 3px;
+}
+
+/* Nav Bar  */
+#navbar{
+    position: absolute;
+    top: 0px;
+}
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(250, 249, 246);
+    display: block;
+    padding: 3px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(235, 235, 243);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('italian-cuisine-2378729__340.jpg') no-repeat center center/cover;
+    
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services */
+#services{
+
+    margin: 35px;
+    display: flex;
+    
+}
+#services .box{
+    border: 3px solid rgb(148, 29, 29);
+    padding: 40px;
+    margin: 3px 16px;
+    border-radius: 15px;
+    background: cornsilk;
+    
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    
+}
+
+#client-section{
+    height: 400px;
+    
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('platter-2009590__340.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: .7;
+} 
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#clients img{
+    height: 100px;
+}
+.client-item{
+    padding: 30px;
+}
+
+/* contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('contact-us-2993000__340.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 30%;
+}
+footer{
+    background: black;
+    color: white;
+
+    padding: 5px 10px;
+}
+
+/* uitility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 10px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 10px;
+}
+.btn{
+    padding: 5px 15px;
+    border: 2px solid rgb(243, 235, 235);
+    border-radius: 10px;
+    background-color: rgb(247, 138, 119);
+    color: white;
+    margin: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
